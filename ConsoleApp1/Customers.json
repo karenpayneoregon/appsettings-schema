@@ -1,0 +1,24 @@
+﻿[
+  {
+    "CustomerIdentifier": 1,
+    "CompanyName": "Gems are us",
+    "ContactId": 0,
+    "ContactTypeIdentifier": 1,
+    "CountryIdentifier": 1
+  },
+  {
+    "CustomerIdentifier": 2,
+    "CompanyName": "ABC 1",
+    "ContactId": 1,
+    "ContactTypeIdentifier": 1,
+    "CountryIdentifier": 1
+  },
+  {
+    "CustomerIdentifier": 3,
+    "CompanyName": "ABC Inc.",
+    "ContactId": 1,
+    "ContactTypeIdentifier": 1,
+    "CountryIdentifier": 4
+  }
+
+]

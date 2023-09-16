@@ -1,0 +1,99 @@
+﻿{
+  "$id": "root",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "Logging": {
+      "type": "object",
+      "description": "For log settings",
+      "properties": {
+        "LogLevel": {
+          "type": "object",
+          "properties": {
+            "Default": {
+              "type": "string",
+              "default": "Information",
+              "enum": [
+                "Warning",
+                "Information"
+              ]
+            },
+            "Microsoft.AspNetCore": {
+              "type": "string",
+              "default": "Warning",
+              "enum": [
+                "Warning",
+                "Information"
+              ]
+            },
+            "Microsoft.EntityFrameworkCore.Database.Command": {
+              "type": "string",
+              "default": "Information",
+              "enum": [
+                "Warning",
+                "Information"
+              ]
+            }
+          },
+          "required": [
+            "Default",
+            "Microsoft.AspNetCore"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "LogLevel"
+      ],
+      "additionalProperties": false
+    },
+    "AllowedHosts": {
+      "type": "string",
+      "default": "*",
+      "enum": [
+        "*",
+        "example.com",
+        "*.example.com"
+      ]
+    },
+    "ConnectionsConfiguration": {
+      "type": "object",
+      "description": "Connection string environments",
+      "properties": {
+        "ActiveEnvironment": {
+          "description": "Set current connection string",
+          "type": "string",
+          "enum": [
+            "Development",
+            "Stage",
+            "Production"
+          ]
+        },
+        "Development": {
+          "type": "string",
+          "enum": [
+            "Data Source=.\\SQLEXPRESS;Initial Catalog=NorthWind2022;Integrated Security=True;Encrypt=False",
+            "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=FluentValidation1;Integrated Security=True;Encrypt=False",
+            "Data Source=.\\SQLEXPRESS;Initial Catalog=HasConversions;Integrated Security=True;Encrypt=False",
+            "Data Source=.\\SQLEXPRESS;Initial Catalog=VisualStudio2022Data;Integrated Security=True;Encrypt=False"
+          ]
+        },
+        "Stage": {
+          "type": "string"
+        },
+        "Production": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ActiveEnvironment",
+        "Development"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "ConnectionsConfiguration"
+  ],
+  "additionalProperties": true
+}

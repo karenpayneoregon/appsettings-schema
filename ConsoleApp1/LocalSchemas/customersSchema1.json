@@ -1,0 +1,62 @@
+﻿{
+  "$id": "root",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "CompanyName": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 100,
+        "pattern": "^[A-Za-z\\s]*$",
+        "description": "Company letters only",
+        "title": "Company name"
+      },
+      "ContactId": {
+        "type": "integer",
+        "default": "NaN",
+        "examples": [
+          1
+        ],
+        "title": "Contact foreign key",
+        "description": "Contact foreign key"
+      },
+      "ContactTypeIdentifier": {
+        "type": "integer",
+        "default": 8,
+        "title": "foreign key",
+        "description": "Contact type foreign key",
+        "examples": [
+          1
+        ]
+      },
+      "CountryIdentifier": {
+        "type": "integer",
+        "title": "foreign key",
+        "description": "Country foreign key",
+        "default": 1,
+        "examples": [
+          1
+        ]
+      },
+      "CustomerIdentifier": {
+        "type": "integer",
+        "title": "Primary key",
+        "description": "Primary key",
+        "default": 1,
+        "examples": [
+          1
+        ]
+      }
+    },
+    "required": [
+      "CompanyName",
+      "ContactId",
+      "ContactTypeIdentifier",
+      "CountryIdentifier",
+      "CustomerIdentifier"
+    ],
+    "additionalProperties": false
+  }
+}

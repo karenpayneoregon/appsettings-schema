@@ -1,0 +1,92 @@
+{
+  "$id": "root",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "Logging": {
+      "type": "object",
+      "properties": {
+        "LogLevel": {
+          "type": "object",
+          "properties": {
+            "Default": {
+              "type": "string",
+              "default": "Information",
+              "enum": [
+                "Warning",
+                "Information"
+              ]
+            },
+            "Microsoft.AspNetCore": {
+              "type": "string",
+              "default": "Warning",
+              "enum": [
+                "Warning",
+                "Information"
+              ]
+            },
+            "Microsoft.EntityFrameworkCore.Database.Command": {
+              "type": "string",
+              "default": "Information",
+              "description": "Log level for EF Core",
+              "enum": [
+                "Warning",
+                "Information"
+              ]
+            }
+          },
+          "required": [
+            "Default",
+            "Microsoft.AspNetCore",
+            "Microsoft.EntityFrameworkCore.Database.Command"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "LogLevel"
+      ],
+      "additionalProperties": false
+    },
+    "AllowedHosts": {
+      "type": "string",
+      "default": "*",
+      "enum": [
+        "*",
+        "example.com",
+        "*.example.com"
+      ]
+    },
+    "ConnectionStrings": {
+      "type": "object",
+      "properties": {
+        "MainConnection": {
+          "type": "string",
+          "description": "Only NorthWind databases",
+          "enum": [
+            "Server=(localdb)\\MSSQLLocalDB;Database=NorthWind;Trusted_Connection=True",
+            "Data Source=.\\SQLEXPRESS;Initial Catalog=NorthWind2022;Integrated Security=True;Encrypt=False"
+          ]
+        },
+        "SecondaryConnection": {
+          "type": "string",
+          "description": "Only NorthWind databases",
+          "enum": [
+            "Server=(localdb)\\MSSQLLocalDB;Database=NorthWind;Trusted_Connection=True",
+            "Data Source=.\\SQLEXPRESS;Initial Catalog=NorthWind2022;Integrated Security=True;Encrypt=False"
+          ]
+        }
+      },
+      "required": [
+        "MainConnection"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "Logging",
+    "AllowedHosts",
+    "ConnectionStrings"
+  ],
+  "additionalProperties": true
+}

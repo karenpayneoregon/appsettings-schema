@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "CompanyName": "Welch Sporer and Krajcik",
+    "Code": "A001"
+  },
+  {
+    "Id": 2,
+    "CompanyName": "Ryan Schuppe",
+    "Code": "A002"
+  },
+  {
+    "Id": 3,
+    "CompanyName": "Tillman Lubowitz",
+    "Code": "A003"
+  },
+  {
+    "Id": 4,
+    "CompanyName": "Watsica Labadie and Prohaska",
+    "Code": "A004"
+  },
+  {
+    "Id": 5,
+    "CompanyName": "Wehner Rowe and Wilderman",
+    "Code": "A005"
+  },
+  {
+    "Id": 6,
+    "CompanyName": "Huels Inc",
+    "Code": "A006"
+  },
+  {
+    "Id": 7,
+    "CompanyName": "Batz Mc Cullough",
+    "Code": "A007"
+  },
+  {
+    "Id": 8,
+    "CompanyName": "Botsford Hauck",
+    "Code": "A008"
+  },
+  {
+    "Id": 9,
+    "CompanyName": "Block Crooks and Lowe",
+    "Code": "A009"
+  },
+  {
+    "Id": 10,
+    "CompanyName": "Breitenberg Lubowitz and Rodriguez",
+    "Code": "A010"
+  }
+]
