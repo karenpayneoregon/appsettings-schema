@@ -222,6 +222,9 @@ At the very least a schema file can be hosted in a GitHub repository. Once pushe
 
 In the schema input at the end type in **?reload** and press enter.
 
+## Source code
+
+Clone the following [GitHub repository](https://github.com/karenpayneoregon/appsettings-schema).
 
 ## Resources
 
