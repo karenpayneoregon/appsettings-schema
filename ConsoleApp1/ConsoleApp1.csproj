@@ -7,14 +7,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ProjectExtensions><VisualStudio><UserProperties customers_1json__JsonSchema="LocalSchemas\customersSchema1.json" tickets_1json__JsonSchema="LocalSchemas\Ticket.json" /></VisualStudio></ProjectExtensions>
+  <ProjectExtensions><VisualStudio><UserProperties customers_1json__JsonSchema="LocalSchemas\customersSchema1.json" test_1json__JsonSchema="LocalSchemas\customersSchema1.json" tickets_1json__JsonSchema="LocalSchemas\Ticket.json" /></VisualStudio></ProjectExtensions>
 
   <ItemGroup>
     <None Remove="readme.md" />
+    <None Remove="Store\readme.md" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="readme.md" />
+    <Content Include="Store\readme.md" />
   </ItemGroup>
 
 </Project>
